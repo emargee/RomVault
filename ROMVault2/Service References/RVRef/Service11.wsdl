@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://services.romvault.com/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://services.romvault.com/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_CheckPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPassword" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CheckPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendUser1_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendUser1" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendUser1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendUser1Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetLatestVersion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatestVersion" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetLatestVersion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatestVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetLatestVersion1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatestVersion1" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetLatestVersion1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatestVersion1Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUpdateLink_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUpdateLink" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUpdateLink_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUpdateLinkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUpdateLink1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUpdateLink1" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUpdateLink1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUpdateLink1Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendErrorMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendErrorMessage" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendErrorMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendErrorMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendErrorMessage1_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendErrorMessage1" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendErrorMessage1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendErrorMessage1Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendErrorMessage2_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendErrorMessage2" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendErrorMessage2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendErrorMessage2Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendErrorMessage3_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendErrorMessage3" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendErrorMessage3_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendErrorMessage3Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendDATErrorMessage2_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendDATErrorMessage2" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendDATErrorMessage2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendDATErrorMessage2Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendDATErrorMessage3_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendDATErrorMessage3" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendDATErrorMessage3_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendDATErrorMessage3Response" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="CheckPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CheckPassword" message="tns:IService1_CheckPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CheckPasswordResponse" message="tns:IService1_CheckPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendUser" message="tns:IService1_SendUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendUserResponse" message="tns:IService1_SendUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendUser1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendUser1" message="tns:IService1_SendUser1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendUser1Response" message="tns:IService1_SendUser1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestVersion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetLatestVersion" message="tns:IService1_GetLatestVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetLatestVersionResponse" message="tns:IService1_GetLatestVersion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestVersion1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetLatestVersion1" message="tns:IService1_GetLatestVersion1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetLatestVersion1Response" message="tns:IService1_GetLatestVersion1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUpdateLink">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetUpdateLink" message="tns:IService1_GetUpdateLink_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetUpdateLinkResponse" message="tns:IService1_GetUpdateLink_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUpdateLink1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetUpdateLink1" message="tns:IService1_GetUpdateLink1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetUpdateLink1Response" message="tns:IService1_GetUpdateLink1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendErrorMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendErrorMessage" message="tns:IService1_SendErrorMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendErrorMessageResponse" message="tns:IService1_SendErrorMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendErrorMessage1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendErrorMessage1" message="tns:IService1_SendErrorMessage1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendErrorMessage1Response" message="tns:IService1_SendErrorMessage1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendErrorMessage2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendErrorMessage2" message="tns:IService1_SendErrorMessage2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendErrorMessage2Response" message="tns:IService1_SendErrorMessage2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendErrorMessage3">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendErrorMessage3" message="tns:IService1_SendErrorMessage3_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendErrorMessage3Response" message="tns:IService1_SendErrorMessage3_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendDATErrorMessage2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendDATErrorMessage2" message="tns:IService1_SendDATErrorMessage2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendDATErrorMessage2Response" message="tns:IService1_SendDATErrorMessage2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendDATErrorMessage3">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendDATErrorMessage3" message="tns:IService1_SendDATErrorMessage3_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendDATErrorMessage3Response" message="tns:IService1_SendDATErrorMessage3_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckPassword">
+      <soap:operation soapAction="http://tempuri.org/IService1/CheckPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendUser1">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendUser1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestVersion">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetLatestVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestVersion1">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetLatestVersion1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUpdateLink">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetUpdateLink" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUpdateLink1">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetUpdateLink1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendErrorMessage">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendErrorMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendErrorMessage1">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendErrorMessage1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendErrorMessage2">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendErrorMessage2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendErrorMessage3">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendErrorMessage3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendDATErrorMessage2">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendDATErrorMessage2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendDATErrorMessage3">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendDATErrorMessage3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://services.romvault.com/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
